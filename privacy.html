@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade — RESGATA AI Backup</title>
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1f2937;background:#fff}a{color:#047857}code{background:#f3f4f6;padding:0 .2em}</style>
+</head>
+<body>
+<h1>Política de privacidade — RESGATA AI Backup</h1>
+<p><em>Vigente desde 18 de outubro de 2026.</em></p>
+
+<p>O <strong>RESGATA AI Backup</strong> é uma ferramenta de linha de comando de <strong>uso pessoal</strong>.
+Ela roda somente no computador do próprio titular da conta Google e não tem servidor, site de serviço,
+cadastro de usuários, anúncios ou coleta de dados. Esta política descreve exatamente o que ela faz com
+dados do Google.</p>
+
+<h2>1. Dados do Google acessados</h2>
+<p>A ferramenta solicita uma única permissão: <code>https://www.googleapis.com/auth/drive.file</code>.
+Com ela, a ferramenta cria uma pasta e arquivos no Google Drive do usuário e pode ler, verificar e
+listar <strong>apenas os arquivos que ela mesma criou</strong>. Ela não acessa nenhum outro arquivo do
+Drive, nem e-mails, contatos, agenda, perfil ou qualquer outro dado da conta.</p>
+
+<h2>2. Como os dados são usados</h2>
+<p>O acesso serve exclusivamente para a função que o usuário vê: enviar cópias de backups do próprio
+usuário para a pasta privada no Drive, conferir a integridade dessas cópias (hash SHA-256) e baixá-las
+de volta para recuperação.</p>
+
+<h2>3. Armazenamento e proteção</h2>
+<ul>
+  <li>Os arquivos enviados são <strong>cifrados no computador do usuário antes do envio</strong>
+  (X25519 + AES-256-GCM). Nem a ferramenta nem o Google conseguem lê-los sem a chave privada do usuário,
+  que nunca é enviada.</li>
+  <li>A autorização do Google (token) e as credenciais do aplicativo ficam apenas no computador do
+  usuário, em arquivo com acesso restrito ao próprio usuário.</li>
+  <li>A transmissão para o Google usa as conexões criptografadas (HTTPS) das APIs do Google.</li>
+</ul>
+
+<h2>4. Compartilhamento</h2>
+<p>Nenhum dado é vendido, compartilhado ou transferido a terceiros, nem enviado a servidores do
+desenvolvedor, serviços de análise ou publicidade. Os arquivos ficam apenas no Google Drive do próprio
+usuário.</p>
+
+<h2>5. Retenção e exclusão</h2>
+<p>Os arquivos permanecem no Google Drive do usuário até que ele os exclua; a ferramenta não os apaga.
+Para excluir tudo, basta apagar a pasta da ferramenta no Google Drive. Para revogar o acesso, use
+Conta Google → Segurança → Apps de terceiros com acesso à conta → RESGATA AI Backup → Remover acesso, e
+apague o arquivo de configuração local da ferramenta.</p>
+
+<h2>6. Uso limitado e inteligência artificial</h2>
+<p>O uso de informações recebidas das APIs do Google seguirá a
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário
+dos serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. Nenhum dado obtido das APIs
+do Google é usado para publicidade, venda a terceiros, decisões de crédito, criação de bancos de dados,
+nem para desenvolver, aprimorar ou treinar modelos de inteligência artificial ou aprendizado de máquina.</p>
+
+<h2>7. Contato</h2>
+<p>Dúvidas sobre esta política: <a href="mailto:empresa.ia.cmo@gmail.com">empresa.ia.cmo@gmail.com</a>.</p>
+
+<p><a href="index.html">Início</a></p>
+</body>
+</html>

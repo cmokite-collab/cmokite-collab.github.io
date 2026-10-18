@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RESGATA AI Backup</title>
+<meta name="description" content="Ferramenta pessoal que envia backups já cifrados para uma pasta privada do Google Drive do próprio usuário.">
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1f2937;background:#fff}a{color:#047857}code{background:#f3f4f6;padding:0 .2em}</style>
+</head>
+<body>
+<h1>RESGATA AI Backup</h1>
+<p>Ferramenta de linha de comando, de <strong>uso pessoal</strong>, que protege backups contra a perda
+do computador: ela envia cópias <strong>já cifradas</strong> para uma pasta privada no Google Drive do
+próprio usuário, confere cada cópia (SHA-256) e permite baixá-las de volta para recuperação.</p>
+
+<h2>Como funciona</h2>
+<ol>
+  <li>No computador do usuário, cada backup é cifrado (X25519 + AES-256-GCM) antes de qualquer envio.</li>
+  <li>A ferramenta envia somente esses arquivos cifrados, usando a permissão
+  <code>drive.file</code> — acesso apenas aos arquivos que ela mesma cria.</li>
+  <li>Nada é apagado nem sobrescrito no Drive; versões anteriores são preservadas.</li>
+</ol>
+
+<p>Não há cadastro, servidor, anúncios ou coleta de dados.
+Leia a <a href="privacy.html">política de privacidade</a>.</p>
+</body>
+</html>
